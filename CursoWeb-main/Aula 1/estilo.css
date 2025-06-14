@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Heebo:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+*{
+    font-family: "Heebo", sans-serif;
+}
+header{
+    background-color: rgb(111, 111, 194);
+    color: white;
+    text-align: center;
+}
+
+.li-navbar{
+    list-style: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.li-navbar:hover{
+    color: brown;
+    font-size: 24px;
+    font-family:"Heebo", sans-serif;
+}
+
+.introducao{
+    background-color: black;
+    color: white;
+}
+
+.descricao{
+    background-color: brown;
+    color: white;
+}

@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  h2, h3, h4 {
+    color: #2c3e50;
+  }
+
+  form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    max-width: 500px;
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  form button:hover {
+    background-color: #2980b9;
+  }
+
+  #lista {
+    margin-top: 20px;
+  }
+
+  .item {
+    background: #ffffff;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+
+  .avaliacao-1 { color: #e74c3c; font-weight: bold; }
+  .avaliacao-2 { color: #e67e22; font-weight: bold; }
+  .avaliacao-3 { color: #f1c40f; font-weight: bold; }
+  .avaliacao-4 { color: #2ecc71; font-weight: bold; }
+  .avaliacao-5 { color: #27ae60; font-weight: bold; }
+
+  #filtro-filmes,
+  #filtro-series,
+  #filtro-todos {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #bdc3c7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #filtro-filmes:hover,
+  #filtro-series:hover,
+  #filtro-todos:hover {
+    background-color: #95a5a6;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+
+  #total-filmes, #total-series, #duracao-total, #media-avaliacoes {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  

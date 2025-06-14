@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        #mensagem {
+            color: blue;
+            font-size: 20px;
+            background-color: chocolate;
+            border: 1px solid white;
+        }
+
+        #entrada {
+            margin-top: 10 px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Atividade com jQuery</h1>
+    <p id="mensagem">Texto original</p>
+    <input type="text" id="entrada" placeholder="Digite algo aqui">
+    <br><br>
+    <button id="botao">Clique aqui</button>
+
+    <script>
+        $("#botao").click(function () {
+            $("#mensagem").text("Você clicou no botão!").css("color", "magenta").fadeOut(500).fadeIn(500);
+        });
+
+        //duplo click
+        $("#botao").dblclick(function () {
+            $("#mensagem").append("(Voçê deu um duplo clique!)").css("font-weight", "bold");
+        });
+
+        $("#mensagem").mouseenter(function () {
+            $(this).css("background-color", "pink");
+        }).mouseleave(function () {
+            $(this).css("background-color", "white");
+        });
+
+        //apende, preped, before, after
+        $("#botao").click(function(){
+        $("#mensagem").append("<p> Adicionado append</p>");
+        $("#mensagem").prepend("<p> Adicionando prepend</p>");
+        $("#mensagem").before("<p> Before - Texto antes e fora do meu elemento </p>");
+        $("#mensagem").after("<p> After - Texto anyes e fora do meu elemento</p>");
+        });
+
+
+    </script>
+
+
+</body>

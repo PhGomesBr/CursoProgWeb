@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Filmes e Séries</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="atv.css">
+</head>
+<body>
+
+  <h2>Cadastro de Filmes e Séries</h2>
+
+  <form id="formulario">
+    <label>Tipo:</label>
+    <select id="tipo" required>
+      <option value="">Selecione</option>
+      <option value="Filme">Filme</option>
+      <option value="Série">Série</option>
+    </select><br>
+
+    <label>Título:</label>
+    <input type="text" id="titulo" required><br>
+
+    <label>Gênero:</label>
+    <input type="text" id="genero" required><br>
+
+    <label>Ano:</label>
+    <input type="number" id="ano" required><br>
+
+    <label>Avaliação (1-5):</label>
+    <input type="number" id="avaliacao" min="1" max="5" required><br>
+
+    <label>Comentário:</label>
+    <textarea id="comentario" required></textarea><br>
+
+    <label>Duração (min):</label>
+    <input type="number" id="duracao"><br>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <hr>
+  
+  <div>
+    <button id="filtro-filmes">Mostrar só Filmes</button>
+    <button id="filtro-series">Mostrar só Séries</button>
+    <button id="filtro-todos">Mostrar Todos</button>
+  </div>
+
+  <h3>Lista de Itens</h3>
+  <div id="lista"></div>
+
+  <h4>Resumo:</h4>
+  <p>Total de Filmes: <span id="total-filmes">0</span></p>
+  <p>Total de Séries: <span id="total-series">0</span></p>
+  <p>Duração Total: <span id="duracao-total">0</span> min</p>
+  <p>Média das Avaliações: <span id="media-avaliacoes">0</span></p>
+
+  <script src="atv.js"></script>
+</body>
+</html>
