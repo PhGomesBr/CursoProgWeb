@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #1e1e2f;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Timer fora da div .app */
+#timer {
+  font-size: 1.8rem;
+  color: #ffdd57;
+  font-weight: 700;
+  text-shadow: 0 0 8px #ffdd57;
+  margin-bottom: 10px;
+  min-width: 220px;
+  text-align: center;
+  padding: 12px 25px;
+  border: 2px solid #ffdd57;
+  border-radius: 12px;
+  background: #2c2c44;
+  box-shadow: 0 0 20px rgba(255, 221, 87, 0.8);
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Aviso faltando 10 segundos */
+#timer.warning {
+  color: #e74c3c;
+  border-color: #e74c3c;
+  box-shadow: 0 0 20px #e74c3c;
+  animation: pulse 1s infinite;
+}
+
+/* Pulse animation para o aviso */
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 8px #e74c3c;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff4136;
+  }
+}
+
+/* app container */
+.app {
+  background: #2c2c44;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #ffdd57;
+  text-shadow: 0 0 10px #ffdd57;
+}
+
+h2#question {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  min-height: 60px;
+  line-height: 1.3;
+}
+
+#answer-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 15px;
+  background-color: #3a3a5a;
+  border: none;
+  border-radius: 8px;
+  color: #eee;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #5a5a8a;
+  box-shadow: 0 6px 12px rgba(90, 90, 138, 0.7);
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.btn.correct {
+  background-color: #4caf50 !important; /* verde */
+  color: #fff;
+  box-shadow: 0 0 10px #4caf50;
+}
+
+.btn.incorrect {
+  background-color: #e74c3c !important; /* vermelho */
+  color: #fff;
+  box-shadow: 0 0 10px #e74c3c;
+}
+
+#next-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  background: #ffdd57;
+  color: #2c2c44;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 221, 87, 0.7);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: none; /* inicialmente escondido */
+}
+
+#next-btn:hover {
+  background-color: #f5c20a;
+  transform: scale(1.05);
+}
