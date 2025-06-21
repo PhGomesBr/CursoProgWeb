@@ -1,0 +1,181 @@
+/* Reset e base */
+/* Remove margens e preenchimentos padrão do navegador e define uma fonte padrão */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4; /* Define uma cor de fundo clara */
+    color: #333; /* Define a cor padrão do texto */
+}
+
+/* Cabeçalho */
+/* Estiliza o cabeçalho da página */
+header {
+    background-color: #222; /* Define uma cor de fundo escura */
+    color: #fff; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 30px 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estiliza o título principal dentro do cabeçalho */
+header h1 {
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Filtros */
+/* Define o espaçamento para a seção de filtros */
+.filters {
+    margin: 20px 0; /* Adiciona margem acima e abaixo */
+}
+
+/* Estiliza os botões de filtro e o botão de limpar filtros */
+.filter-btn,
+#clear-filters {
+    background-color: #444; /* Define uma cor de fundo escura */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove bordas padrão */
+    padding: 10px 16px; /* Adiciona espaçamento interno */
+    margin: 5px; /* Adiciona espaçamento entre os botões */
+    border-radius: 8px; /* Arredonda os cantos dos botões */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+    font-size: 1em; /* Define o tamanho da fonte */
+    transition: 0.3s; /* Adiciona uma transição suave para mudanças de estilo */
+}
+
+/* Estiliza os botões ao passar o mouse */
+.filter-btn:hover,
+#clear-filters:hover {
+    background-color: #007BFF; /* Altera a cor de fundo para azul ao passar o mouse */
+}
+
+/* Estiliza o botão ativo */
+.filter-btn.active {
+    background-color: #007BFF; /* Define a cor de fundo azul para o botão ativo */
+}
+
+/* Campo de busca */
+/* Estiliza o campo de busca */
+#search {
+    display: block; /* Faz o campo ocupar toda a largura disponível */
+    margin: 15px auto; /* Centraliza o campo horizontalmente e adiciona margem vertical */
+    padding: 10px; /* Adiciona espaçamento interno */
+    width: 80%; /* Define a largura como 80% do contêiner */
+    max-width: 500px; /* Define uma largura máxima */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
+    border-radius: 8px; /* Arredonda os cantos do campo */
+}
+  
+  /* Galeria */
+  #movie-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 220px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .card h3 {
+    margin: 10px;
+    font-size: 1.2em;
+  }
+  
+  .card p {
+    margin: 0 10px 10px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Modal */
+  .modal {
+    display: flex; /* Ativa o modelo de layout flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: fixed; /* Garante que o modal fique fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    z-index: 10; /* Garante que o modal fique acima de outros elementos */
+    
+}
+/* Estilização do conteúdo do modal */
+.modal-content {
+    background: #fff; /* Define o fundo branco para o modal */
+    padding: 5px; /* Adiciona espaçamento interno ao conteúdo */
+    border-radius: 15px; /* Arredonda os cantos do modal */
+    height: 90%; /* Define a altura como 100% do contêiner pai*/
+    max-width: 500px; /* Define uma largura máxima para o modal */
+    position: relative; /* Define a posição relativa para elementos posicionados dentro do modal */
+    text-align: center; /* Centraliza o texto dentro do modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adiciona sombra ao modal */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
+}
+
+/* Estilização do título dentro do modal */
+.modal-content h3 {
+    margin: 0 0 10px; /* Remove margem superior e adiciona margem inferior */
+    font-size: 1.2em; /* Define o tamanho da fonte */
+}
+
+/* Estilização do parágrafo dentro do modal */
+.modal-content p {
+    margin: 0 0 20px; /* Remove margem superior e adiciona margem inferior */
+    font-size: 0.9em; /* Define o tamanho da fonte */
+}
+
+/* Estilização do botão/link dentro do modal */
+.modal-content a {
+    display: inline-block; /* Exibe o link como um bloco inline */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+    background-color: #007bff; /* Define a cor de fundo azul */
+    color: #fff; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: 0.3s; /* Adiciona uma transição suave para mudanças de estilo */
+}
+
+/* Estilização do botão/link ao passar o mouse */
+.modal-content a:hover {
+    background-color: #0056b3; /* Altera a cor de fundo para azul escuro ao passar o mouse */
+}
+
+/* Estilização da imagem dentro do modal */
+.modal-content img {
+    max-width: 100%; /* Define a largura máxima como 100% do contêiner pai */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+    height: 60%;
+}
+
+/* Estilização do botão de fechar o modal */
+.close {
+    position: absolute; /* Posiciona o botão de forma absoluta dentro do modal */
+    top: 15px; /* Define a distância do topo */
+    right: 25px; /* Define a distância da direita */
+    font-size: 28px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do botão de fechar */
+    cursor: pointer; /* Altera o cursor para ponteiro ao passar o mouse */
+}
