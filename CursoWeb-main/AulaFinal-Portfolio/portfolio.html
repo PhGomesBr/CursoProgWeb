@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <h4>Hello world 👋🏾</h4>
+        <div id="title">Pedro Montanha.</div><br>
+    <div id="links">
+        <a href="#skills">Conhecimentos</a>
+        <a href="#work" style="margin:0px 60px;">Projetos</a>
+        <a href="#contact">Contato</a>
+        <a href="#eu">Sobre mim</a>
+    </div>
+    </div>
+    <div id="middle"></div>
+
+    <div id="portfolio">
+        <div id="eu">
+            <h1>Sobre mim</h1>
+            <div class="about-content">
+                <img src="img/Perfil.jpg" alt="Foto de perfil">
+                <p>
+                  Olá! Sou Pedro Gomes, desenvolvedor apaixonado por tecnologia, criatividade e soluções que realmente fazem a diferença. Trabalho com desenvolvimento web, unindo back-end e front-end para criar aplicações modernas, eficientes e intuitivas.<br><br>
+                  Tenho experiência com Java (Spring Boot) no back-end e Angular no front-end, além de conhecimento em bancos de dados, APIs REST, e boas práticas de arquitetura e design responsivo. Gosto de transformar ideias em projetos reais, com atenção a detalhes e foco na experiência do usuário.
+                </p>
+              </div>
+              
+        </div>
+
+             <div id="skills">
+                 <h1>Conhecimento.</h1>   
+                 <div>
+                        <p>
+                            Sou um desenvolvedor em formação, com foco em Java (Spring Boot) no back-end e Angular no front-end. Estudo e pratico tecnologias como JavaScript, TypeScript, HTML5, CSS3 e Angular Material, desenvolvendo projetos próprios e de estudo.
+                            Tenho experiência com APIs REST, bancos de dados MySQL/MongoDB, JUnit para testes, além de controle de versão com Git. Também crio dashboards interativos usando Chart.js e Recharts.
+                            Estou constantemente me aperfeiçoando e me preparando para atuar profissionalmente na área de desenvolvimento web.                        </p>
+                 </div> 
+             </div>
+         
+              <div id="work">
+                 <h1>Projetos.</h1>
+
+                 <div class="project">
+                    <h2>Projeto 1: Quiz Diverso</h2>
+                    <img src="img/Quiz.png">
+                    <div>Um quiz rápido e divertido, com limite de tempo e visual moderno. 
+                        <br>para testar conhecimentos de forma leve.</div>
+                    <a href="https://github.com/PhGomesBr/CursoProgWeb/tree/main/CursoWeb-main/Aula%206" target="_blank">
+                      <button class="btn_one">Visit Project</button>
+                    </a>
+                  </div>
+                  
+
+                  <div class="project">
+                    <h2>Projeto 2: Galeria de filmes</h2>
+                    <img src="img/GaleriaFilmes.png">
+                    <div>Um quiz rápido e divertido, com limite de tempo e visual moderno. 
+                        <br>para testar conhecimentos de forma leve.</div>
+                    <a href="https://github.com/PhGomesBr/CursoProgWeb/tree/main/CursoWeb-main/Aula%208" target="_blank">
+                      <button class="btn_one">Visit Project</button>
+                    </a>
+                  </div>
+
+                  <div class="project">
+                    <h2>Projeto 3: Sistema de Gestão</h2>
+                    <img src="img/SistemaGestao.png">
+                    <div> Sistema de gestão desenvolvido com Angular no front-end e Java Spring no back-end, 
+                        <br>integrando banco de dados para controle de vendas, estoque e outras funcionalidades essenciais. 
+                        <br>Projetado para oferecer agilidade, organização e praticidade na rotina do usuário.</div>
+                    <a href="https://github.com/PhGomesBr/ProjetoFinal" target="_blank">
+                      <button class="btn_one">Visit Project</button>
+                    </a>
+                  </div>
+
+                </div>
+
+             </div>
+         
+              <div id="contact">
+                 <h1>contact.</h1> 
+                 <form action="https://formsubmit.co/ph.gmontanha1@gmail.com" method="POST" >
+                    <input type="text" name="name" placeholder="name" required>
+                    <input type="email" name="email" placeholder="email" required><br>
+                    <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                                      
+                    <button class="btn_one" type="submit">send</button>
+                  </form>
+                 <div id="details">
+                    <a href="https://instagram.com/phkz7_" title="Instagram" target="_blank" class="btn_social">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/PhGomesBr" title="GitHub" class="btn_social" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                      </a>                                         
+                    <a href="https://www.linkedin.com/in/pedro-montanha-3940b7316" title="LinkedIn" target="_blank" class="btn_social">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>   
+             </div>
+    </div>
+
+<script src="portfolio.js" type="text/javascript"></script>
+</body>
+</html>
